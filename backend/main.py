@@ -63,5 +63,3 @@ def delete_habit(habit_id: int, db: Session = Depends(get_db)):
 
     db.delete(habit)
     db.commit()
-
-    return {"Delection succesful"}
